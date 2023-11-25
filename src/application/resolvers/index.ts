@@ -1,9 +1,9 @@
-import { merge } from 'lodash';
+import * as Lodash from 'lodash';
 
 import { sideDishResolver } from './sideDish.resolver';
 
 import { brokenRiceResolver } from './brokenRice.resolver';
 
-const resolvers = merge(sideDishResolver, brokenRiceResolver);
+const resolvers = Lodash.merge(sideDishResolver, brokenRiceResolver);
 
 export { resolvers };
