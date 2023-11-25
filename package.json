@@ -4,7 +4,7 @@
   "private": true,
   "main": "server.ts",
   "scripts": {
-    "start": "nodemon src/application/server.ts",
+    "start": "nodemon ./src/application/server.ts",
     "seed:database": "ts-node scripts/seed-database.ts",
     "generate:types": "graphql-codegen",
     "test": "NODE_ENV=test TZ=UTC jest"
@@ -21,7 +21,8 @@
     "graphql-codegen": "^0.4.0",
     "lodash": "^4.17.21",
     "mongodb": "^4.1.1",
-    "typescript": "^4.3.4"
+    "typescript": "^4.3.4",
+    "nodemon": "^2.0.12"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.2.0",
