@@ -56,6 +56,7 @@ const typeDefs = gql`
   }
 
   type BrokenRiceDocument {
+    id: String!
     name: String!
     description: String!
     sideDishes: [SideDish!]!

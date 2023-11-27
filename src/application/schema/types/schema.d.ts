@@ -40,6 +40,7 @@ export type BrokenRiceConnection = {
 export type BrokenRiceDocument = {
   __typename?: "BrokenRiceDocument";
   description: Scalars["String"];
+  id: Scalars["String"];
   imgSrc: Scalars["String"];
   name: Scalars["String"];
   priceCents: Scalars["Int"];
