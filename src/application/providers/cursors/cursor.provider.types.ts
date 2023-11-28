@@ -1,7 +1,7 @@
-import { BrokenRiceDocument } from 'src/entities/brokenRice';
+import { BrokenRice } from '../brokenRices/brokenRice.provider.types';
 
 export interface BrokenRiceResponse {
-  brokenRices: BrokenRiceDocument[];
+  brokenRices: BrokenRice[];
   connection: BrokenRiceConnection;
 }
 export interface BrokenRiceConnection {

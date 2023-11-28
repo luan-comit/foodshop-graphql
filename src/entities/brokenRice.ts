@@ -1,9 +1,8 @@
 import { Document, ObjectId } from 'mongodb';
 import { BrokenRice } from '../application/providers/brokenRices/brokenRice.provider.types';
 
-interface BrokenRiceDocument extends Document, Omit<BrokenRice, 'id'> {
-  id: string
-}
+interface BrokenRiceDocument extends Document, Omit<BrokenRice, 'id'> {};
+
 interface BrokenRiceWithSideDishIds extends BrokenRice, Omit<BrokenRice & { sideDishIds: ObjectId[] }, 'sideDishes' | 'priceCents'> {}
 
 const toBrokenRiceObject = (brokenRice: BrokenRiceDocument): BrokenRiceWithSideDishIds => {

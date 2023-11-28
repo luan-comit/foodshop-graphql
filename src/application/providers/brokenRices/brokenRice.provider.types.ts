@@ -1,4 +1,3 @@
-import { BrokenRiceDocument } from 'src/entities/brokenRice';
 import { SideDish } from '../sideDishes/sideDish.provider.types';
 
 export interface BrokenRice {
@@ -25,7 +24,7 @@ export type UpdateBrokenRiceInput = {
 };
 
 export type BrokenRiceResponse = {
-  brokenRices: BrokenRiceDocument[];
+  brokenRices: BrokenRice[];
   connection: BrokenRiceConnection;
 };
 

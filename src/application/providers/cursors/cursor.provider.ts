@@ -1,5 +1,5 @@
 import { Collection, ObjectId } from 'mongodb';
-import { BrokenRiceDocument } from 'src/entities/brokenRice';
+import { BrokenRiceDocument, toBrokenRiceObject } from '../../../entities/brokenRice';
 import { BrokenRiceResponse } from './cursor.provider.types';
 
 class CursorProvider {
@@ -18,7 +18,7 @@ class CursorProvider {
     const newTotalCount = totalCount === 0 ? brokenRices.length : totalCount + brokenRices.length;
     var hasNextPage = brokenRices.length === limit;
     return {
-      brokenRices: brokenRices,
+      brokenRices: brokenRices.map(item => toBrokenRiceObject(item)),
       connection: {
         cursor: lastCursor,
         totalCount: newTotalCount,

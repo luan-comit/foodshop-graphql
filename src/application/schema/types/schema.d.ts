@@ -40,7 +40,7 @@ export type BrokenRiceConnection = {
 export type BrokenRiceDocument = {
   __typename?: "BrokenRiceDocument";
   description: Scalars["String"];
-  id: Scalars["String"];
+  id: Scalars["ObjectID"];
   imgSrc: Scalars["String"];
   name: Scalars["String"];
   priceCents: Scalars["Int"];
@@ -53,7 +53,7 @@ export type BrokenRiceQueryArgs = {
 
 export type BrokenRiceResponse = {
   __typename?: "BrokenRiceResponse";
-  brokenRices?: Maybe<Array<Maybe<BrokenRiceDocument>>>;
+  brokenRices?: Maybe<Array<Maybe<BrokenRice>>>;
   connection?: Maybe<BrokenRiceConnection>;
 };
 

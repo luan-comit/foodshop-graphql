@@ -45,7 +45,7 @@ const typeDefs = gql`
   }
 
   type BrokenRiceResponse {
-    brokenRices: [BrokenRiceDocument]
+    brokenRices: [BrokenRice]
     connection: BrokenRiceConnection
   }
 

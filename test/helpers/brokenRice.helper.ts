@@ -1,6 +1,6 @@
 import { ObjectId } from 'bson';
 import { BrokenRice, SideDish } from '../../src/application/schema/types/schema';
-import { BrokenRiceDocument } from 'src/entities/brokenRice';
+import { BrokenRiceDocument } from '../../src/entities/brokenRice';
 import { createMockSideDish } from './sideDish.helper';
 
 const mockSideDish = createMockSideDish();
